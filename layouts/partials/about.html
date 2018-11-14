@@ -20,7 +20,7 @@
                     {{"<!-- Express About Yourself -->" | safeHTML}}
                     <div class="content text-center">
                       {{ with .title }}<h3 class="ddd">{{ . }}</h3>{{ end }}
-                      {{ with .content}}  <p>{{ . }}</p>{{ end }}
+                      {{ range .content}}  <p>{{ . }}</p>{{ end }}
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="media-body">
                                    {{with .title}} <h4 class="media-heading">{{ . }}</h4>{{ end }}
-                                   {{ with .content}} <p>{{ . }}</p> {{ end }}
+                                   {{ range .content}} <p>{{ . }}</p> {{ end }}
                                 </div>
                             </div>
                         </div>
