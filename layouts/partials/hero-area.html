@@ -3,10 +3,10 @@
 <section class="hero-area" style='background-image: url("{{ .Site.Params.banner.bgImage | absURL }}");'>
     <div class="block">
         <img class="img-responsive center-block" src="{{ .Site.Params.banner.icon | absURL}}" alt="image">
-       {{with .Site.Params.banner.heading}} <h1>{{ . }}</h1>{{ end }}
-       {{with .Site.Params.banner.content}} <p>{{ . }}</p> {{ end }}
+       {{with .Site.Params.banner.heading}} <h1 class="text-uppercase">{{ . }}</h1>{{ end }}
+        <p class="text-lowercase text-nowrap">{{with .Site.Params.banner.content}}{{ . }}{{ end }}</p> 
        {{ if .Site.Params.banner.btn}}
-        <a data-scroll href="{{ .Site.Params.banner.btnURL}}" class="btn btn-transparent">{{ .Site.Params.banner.btnText}}</a>
+        <a data-scroll href="{{ .Site.Params.banner.btnURL}}" class="btn btn-transparent text-uppercase">{{ .Site.Params.banner.btnText}}</a>
         {{ end }}
     </div>
 </section>
