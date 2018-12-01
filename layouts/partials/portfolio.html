@@ -22,16 +22,15 @@
                 </div>
             </div>
         </div>
-        <div class="row portfolio-items-wrapper">
+        <div class="row portfolio-items-wrapper flex-row">
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
-            <div class="mix col-md-4 {{ .types }}">
-                <div class="portfolio-block">
+            <div class="mix col-md-3 {{ .types }}">
+                <div class="portfolio-block flex-text">
                     <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
                     <div class="caption">
 
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | absURL}}"
-                            data-lightbox="image-1">
+                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | absURL}}" data-lightbox="image-1">
                             <i class="{{ .icon }}"></i>
                         </a>
                         <h4><a href="{{ .URL | absURL }}">{{ .title }}</a></h4>
