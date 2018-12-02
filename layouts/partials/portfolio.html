@@ -25,19 +25,19 @@
         <div class="row portfolio-items-wrapper flex-row">
             {{"<!-- portfolio item -->" | safeHTML}}
             {{ range .Site.Data.portfolio.portfolioItem }}
-            <div class="mix col-md-3 {{ .types }}">
-                <div class="portfolio-block flex-text">
-                    <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
-                    <div class="caption">
+            <article class="mix col-md-2 {{ .types }}" style="padding-left: 1em; padding-right: 1em;">
+                <div class="flex-text portfolio-block service-block">
+                        <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
+                        <div class="caption">
 
-                        <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | absURL}}" data-lightbox="image-1">
-                            <i class="{{ .icon }}"></i>
-                        </a>
-                        <h4><a href="{{ .URL | absURL }}">{{ .title }}</a></h4>
-                        <p>{{ .description }}</p>
-                    </div>
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | absURL}}" data-lightbox="image-1">
+                                <i class="{{ .icon }}"></i>
+                            </a>
+                            <h4><a href="{{ .URL | absURL }}">{{ .title }}</a></h4>
+                            <p>{{ .description }}</p>
+                        </div>
                 </div>
-            </div>
+            </article>
             {{ end }}
         </div>
     </div>
