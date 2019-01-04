@@ -44,7 +44,7 @@
                 <div class="content-block">
                     <div class="text-center">{{with .Site.Data.about2.title}} <h2>{{ . }}</h2> {{ end }}</div>
 
-                    {{with .Site.Data.about2.description}} <p>{{ . }}</p> {{ end }}
+                    {{with .Site.Data.about2.description}} <p>{{ . | safeHTML }}</p> {{ end }}
                 </div>
             </div>
         </div>

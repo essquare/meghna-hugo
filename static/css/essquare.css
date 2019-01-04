@@ -45,7 +45,7 @@ a:hover {
 }
 
 .btn-main {
-    background: var(--essquare-beige);
+    background: var(--essquare-beige-dark);
 }
 
 .btn-main:hover {
@@ -152,7 +152,7 @@ a:hover {
 .about-2 .content-block p {
     margin-top: 60px;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 24px;
     word-spacing: 0.1em;
     line-height: 35px;
 }
@@ -310,4 +310,8 @@ aside.widget {
 .service-block {
     border: 1px solid rgba(236, 239, 241, 0.07);
     box-shadow: none;
+}
+
+.call-to-action h2 {
+    text-transform: uppercase;
 }
