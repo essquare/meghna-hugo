@@ -212,6 +212,15 @@ aside.widget {
     height:auto;
     width:100%
 }
+
+/*===========
+  Navigation
+ ===========*/
+#navigation .logo img {
+    height: auto;
+    width: 50%;
+}
+
 /*========
   Footer
  ========*/
