@@ -79,8 +79,30 @@ a:hover {
     width: 25%;
 }
 
+.hero-area:before {
+    background-color: var(--essquare-blue-dark);
+}
+
+.hero-area .block h1 {
+    color: var(--essquare-beige-dark);
+    text-transform: uppercase;
+    font-size: 44px;
+    margin-top: 50px;
+}
+
+.hero-area .block p {
+    font-weight: 300;
+    margin: 0;
+    font-size: 26px;
+    word-spacing: 0.1em;
+}
+
 .hero-area .block .video-button {
     color: var(--essquare-beige);
+}
+
+.hero-area .block .btn-transparent {
+    font-weight: normal;
 }
 
 .about .block:hover {
