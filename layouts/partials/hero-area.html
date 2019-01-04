@@ -4,7 +4,13 @@
     <div class="block">
         <img class="img-responsive center-block" src="{{ .Site.Params.banner.icon | absURL}}" alt="image">
        {{with .Site.Params.banner.heading}} <h1 class="text-uppercase">{{ . }}</h1>{{ end }}
-        <p class="text-lowercase text-nowrap">{{with .Site.Params.banner.content}}{{ . }}{{ end }}</p> 
+
+        <p>
+            <span class="text-lowercase text-nowrap">{{ with .Site.Params.banner.content0}}{{ . }}{{ end }}</span>
+            <span class="text-lowercase text-nowrap">{{ with .Site.Params.banner.content1}}{{ . }}{{ end }}</span>
+            <span class="text-lowercase text-nowrap">{{ with .Site.Params.banner.content2}}{{ . }}{{ end }}</span>
+        </p>
+
        {{ if .Site.Params.banner.btn}}
         <a data-scroll href="{{ .Site.Params.banner.btnURL}}" class="btn btn-transparent text-uppercase">{{ .Site.Params.banner.btnText}}</a>
         {{ end }}
