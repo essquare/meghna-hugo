@@ -109,6 +109,23 @@ a:hover {
     border-bottom: 2px solid var(--essquare-beige);
 }
 
+.about .block {
+    background-color: var(--essquare-blue-black);
+    color: white;
+}
+
+.about .block .icon-box {
+    font-size: 100px;
+    padding: 0 0 0 10px;
+}
+
+.about .block .icon-box i {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 100px;
+}
+
 .about-2 .content-block .media i {
     color: var(--essquare-beige);
 }
