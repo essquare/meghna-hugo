@@ -1,0 +1,18 @@
+:root {
+    --essquare-blue-dark     : rgba( 45,  54,  64, 1);
+    --essquare-blue          : rgba( 78,  88, 104, 1);
+
+    --essquare-beige-dark    : rgba(179, 161, 119, 1); /*#c5a177*/
+    --essquare-beige         : rgba(224, 202, 154, 1); /*#e0ca9a*/
+
+    --essquare-anthrazit-dark: rgba( 56,  56,  62, 1);
+    --essquare-anthrazit     : rgba( 93,  93,  97, 1);
+}
+
+/*
+
+usage example:
+background-color: var(--essquare-beige-dark);
+background-color: var(--essquare-beige);
+
+*/
