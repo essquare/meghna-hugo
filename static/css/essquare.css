@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 @import url('essquare_colors.css');
 
 body {
     font-family: "Lato", sans-serif;
+}
+
+section.bg-dark {
+    background-color: var(--essquare-blue-black);
 }
 
 h1,
@@ -84,7 +88,7 @@ a:hover {
 }
 
 .hero-area .block h1 {
-    color: var(--essquare-beige-dark);
+    color: var(--essquare-beige);
     text-transform: uppercase;
     font-size: 44px;
     margin-top: 50px;
@@ -114,6 +118,15 @@ a:hover {
     color: white;
 }
 
+.about .block h1,
+.about .block h2,
+.about .block h3,
+.about .block h4,
+.about .block h5,
+.about .block h6 {
+    color: white;
+}
+
 .about .block .icon-box {
     font-size: 100px;
     padding: 0 0 0 10px;
@@ -124,6 +137,24 @@ a:hover {
     top: 0px;
     left: 30px;
     width: 100px;
+}
+
+.about-2 .content-block p,
+.about-2 .content-block h1,
+.about-2 .content-block h2,
+.about-2 .content-block h3,
+.about-2 .content-block h4,
+.about-2 .content-block h5,
+.about-2 .content-block h6 {
+    color: white;
+}
+
+.about-2 .content-block p {
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 30px;
+    word-spacing: 0.1em;
+    line-height: 35px;
 }
 
 .about-2 .content-block .media i {

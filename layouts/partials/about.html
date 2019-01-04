@@ -42,24 +42,9 @@
             </div>
             <div class="col-md-6">
                 <div class="content-block">
-                   {{with .Site.Data.about2.title}} <h2>{{ . }}</h2> {{ end }}
-                   {{with .Site.Data.about2.description}} <h4>{{ . }}</h4> {{ end }}
-                   {{with .Site.Data.about2.description2}} <p>{{ . }}</p> {{ end }}
-                    <div class="row">
-                        {{ range .Site.Data.about2.aboutItem }}
-                        <div class="col-md-6">
-                            <div class="media">
-                                <div class="pull-left">
-                                   {{with .icon}} <i class="{{ . }}"></i> {{ end }}
-                                </div>
-                                <div class="media-body">
-                                   {{with .title}} <h4 class="media-heading">{{ . }}</h4>{{ end }}
-                                   {{ range .content}} <p>{{ . }}</p> {{ end }}
-                                </div>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
+                    <div class="text-center">{{with .Site.Data.about2.title}} <h2>{{ . }}</h2> {{ end }}</div>
+
+                    {{with .Site.Data.about2.description}} <p>{{ . }}</p> {{ end }}
                 </div>
             </div>
         </div>
