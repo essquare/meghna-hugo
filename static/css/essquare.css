@@ -76,7 +76,7 @@ a:hover {
 
 .hero-area .block img {
     height: auto;
-    width: 25%;
+    width: 10em;
 }
 
 .hero-area:before {
@@ -238,9 +238,14 @@ aside.widget {
 /*===========
   Navigation
  ===========*/
+#navigation .navbar-header .logo {
+    margin-top: 5px;
+    height: auto;
+}
+
 #navigation .logo img {
     height: auto;
-    width: 50%;
+    width: 2.3em;
 }
 
 /*========
@@ -248,7 +253,7 @@ aside.widget {
  ========*/
 #footer .container .copyright img {
     height: auto;
-    width: 5%;
+    width: 4em;
 }
 
 /*=================================================================
