@@ -43,7 +43,7 @@ theme = "meghna"
 # Site params
 [params]
 home= "Home"
-logo = "images/logo.png"
+logo = "images/es_Logo_CMYK_gold.svg"
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"
 
     # Banner Section

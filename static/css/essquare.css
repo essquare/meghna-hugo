@@ -74,6 +74,11 @@ a:hover {
     color: var(--essquare-beige);
 }
 
+.hero-area .block img {
+    height: auto;
+    width: 25%;
+}
+
 .hero-area .block .video-button {
     color: var(--essquare-beige);
 }
@@ -206,4 +211,11 @@ aside.widget {
 .flex-row img {
     height:auto;
     width:100%
+}
+/*========
+  Footer
+ ========*/
+#footer .container .copyright img {
+    height: auto;
+    width: 5%;
 }
