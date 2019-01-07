@@ -9,9 +9,13 @@
                 <h1>{{ .Title }}</h1>
                 <ul class="list-inline mb-50">
                     <li class="list-inline-item">{{ .Params.author }}</li>
+                    {{ if .Date }}
                     <li class="list-inline-item">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</li>
+                    {{ end }}
                 </ul>
+                {{ if .Params.image }}
                 <img class="img-fluid mb-50" src="{{ .Params.image | absURL }}" alt="blog-image">
+                {{ end }}
             </div>
             <div class="col-md-8 col-md-offset-2">
                 <div class="post-single-content">
