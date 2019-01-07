@@ -17,7 +17,7 @@
             {{"<!-- tools item -->" | safeHTML}}
             {{ range .Site.Data.tools.toolsItem }}
             <div class="col-xs-12 col-sm-6 col-md-4 narrowgap">
-                <a href="{{ .URL | absURL }}" target="_blank" title="{{ .title }} - {{ .description }}">
+                <a href="{{ .URL | absURL }}" target="_blank">
                     <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
                 </a>
             </div>
