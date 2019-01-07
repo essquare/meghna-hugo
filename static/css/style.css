@@ -881,13 +881,13 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.con-info i,
-.con-info span {
+.con-info i{
     float: left;
 }
 
-.con-info span {
-    margin: -5px 0 0 15px;
+.con-info p {
+    margin: -5px 0 0 20px;
+    white-space: pre-line;
 }
 
 .error {
@@ -2095,4 +2095,3 @@ blockquote {
     margin: 0;
 }
 
-/*# sourceMappingURL=maps/style.css.map */

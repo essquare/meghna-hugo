@@ -15,14 +15,18 @@
             <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
                 {{ with .Site.Data.contact.title }}<h3>{{ . }}</h3> {{ end }}
                 {{ with .Site.Data.contact.content }} <p> {{ . }} </p> {{ end }}
+                {{ range .Site.Data.contact.contactDetails }}
                 <div class="contact-details">
-                    {{ range .Site.Data.contact.contactDetails }}
+                    <h3>{{ .place }}</h3>
+                    {{ range .infos }}
                     <div class="con-info clearfix">
                         <i class="{{ .icon }}"></i>
-                        <span>{{ .info }}</span>
+                        <p>{{ .info | safeHTML}}</p>
                     </div>
                     {{ end }}
                 </div>
+                {{ end }}
+    
             </div>
 
             {{"<!-- Contact Form -->" | safeHTML}}
@@ -63,11 +67,6 @@
         </div>
     </div>
 
-    {{"<!-- Google Map -->" | safeHTML}}
-    <div class="google-map">
-        <div id="map-canvas" {{ with .Site.Data.contact.mapLatitude }} data-latitude="{{ . }}" {{ end }} 
-        {{ with .Site.Data.contact.mapLongitude }} data-longitude="{{ . }}" {{ end }}></div>
-    </div>
 
 </section>
 {{"<!-- /contact -->" | safeHTML}}
