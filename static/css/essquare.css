@@ -342,6 +342,69 @@ aside.widget {
     text-transform: uppercase;
 }
 
+.contact-form .form-control,
+.contact-form textarea.form-control  {
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+.contact-form .form-control {
+    background-color: transparent;
+    border: 1px solid rgba(236, 239, 241, 0.07);
+    height: 45px;
+}
+
+.contact-form textarea.form-control {
+    padding: 10px;
+    height: 180px;
+}
+
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+#contact-submit:hover {
+    border-color: var(--essquare-beige);
+}
+
+#contact-submit {
+    background: var(--essquare-beige-dark);
+    border: 1px solid rgba(236, 239, 241, 0.07);
+    padding: 12px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.contact-info h1,
+.contact-info h2,
+.contact-info h3,
+.contact-info h4,
+.contact-info h5,
+.contact-info h6,
+.contact-info p {
+    color: white;
+} 
+
+.contact-info p {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.con-info {
+    margin-bottom: 0;
+}
+
+.con-info i{
+    float: left;
+}
+
+.con-info p {
+    margin-bottom: 5px;
+    white-space: pre-line;
+}
+
+#contact-us div.contact-info div.row {
+    margin-bottom: 15px;
+}
 /*=================================================================
   Ionicons Icon Font (copied from themefisher css to match Theme)
 ==================================================================*/
