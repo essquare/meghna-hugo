@@ -59,11 +59,6 @@ jQuery(function ($) {
 		fixedContentPos: false,
 		fixedBgPos: true
 	});
-	/* ========================================================================= */
-	/*	Portfolio Filtering Hook
-	/* =========================================================================  */
-
-	var mixer = mixitup('.portfolio-items-wrapper');
 
 	/* ========================================================================= */
 	/*	Testimonial Carousel
