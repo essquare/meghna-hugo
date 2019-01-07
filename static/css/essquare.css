@@ -110,6 +110,10 @@ a:hover {
     font-weight: normal;
 }
 
+.about.section {
+    background-color: var(--essquare-blue-dark);
+}
+
 .about .block:hover {
     border-bottom: 2px solid var(--essquare-beige);
 }
@@ -309,9 +313,30 @@ aside.widget {
   Services section
 ==================================================================*/
 .service-block {
-    border: 1px solid rgba(236, 239, 241, 0.07);
+    background-color: var(--essquare-blue-black);
+    color: white;
+    border: none;
     box-shadow: none;
 }
+
+.service-block p {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.service-block h1,
+.service-block h2,
+.service-block h3,
+.service-block h4,
+.service-block h5,
+.service-block h6 {
+    color: white;
+}
+
+.service-block:hover {
+    border-bottom: 2px solid var(--essquare-beige);
+}
+
 
 .call-to-action h2 {
     text-transform: uppercase;
@@ -333,3 +358,4 @@ aside.widget {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
