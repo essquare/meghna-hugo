@@ -1,6 +1,6 @@
 {{ if .Site.Data.service.enable}}
 {{"<!-- service -->" | safeHTML }}
-<section id="services" class="bg-one section">
+<section class="services section" id="services">
     <div class="container">
         {{"<!-- section title -->" | safeHTML }}
         <div class="title text-center wow fadeIn" data-wow-duration="500ms">
@@ -9,9 +9,6 @@
         </div>
         {{"<!-- /section title -->" | safeHTML }}
         <div class="row flex-row">
-
-
-
             {{ range .Site.Data.service.serviceItem}}
             {{"<!-- Single Service Item -->" | safeHTML }}
             <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">

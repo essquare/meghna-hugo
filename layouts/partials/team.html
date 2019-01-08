@@ -1,6 +1,6 @@
 {{ if .Site.Data.team.enable}}
 {{"<!-- Start Our Team -->" | safeHTML}}
-<section id="our-team" class="section">
+<section class="section" id="team">
     <div class="container">
         {{"<!-- section title -->" | safeHTML}}
         <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
@@ -31,7 +31,7 @@
                     </div>
 
                     {{"<!-- member name & designation -->" | safeHTML}}
-                    <div class="member-meta">
+                    <div class="narrowgap">
                         <h4 class="text-center">{{ .name }}</h4>
                         <p class="text-center ">{{ .designation }}</p>
                         <p class="flex-text">{{ .description }}</p>

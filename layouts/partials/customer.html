@@ -1,12 +1,12 @@
-{{ if .Site.Data.tools.enable}}
-{{"<!-- Tools Section -->" | safeHTML}}
-<section class="tools section" id="tools">
+{{ if .Site.Data.customer.enable}}
+{{"<!-- Customer Section -->" | safeHTML}}
+<section class="customer section" id="customers">
     <div class="container">
         <div class="row ">
             <div class="col-lg-12">
                 {{"<!-- section title -->" | safeHTML}}
                 <div class="title text-center">
-                    <h2> {{ with .Site.Data.tools.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.tools.headingSpan }} {{ . }} {{ end }}</span></h2>
+                    <h2> {{ with .Site.Data.customer.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.customer.headingSpan }} {{ . }} {{ end }}</span></h2>
                     <div class="border"></div>
                 </div>
                 {{"<!-- /section title -->" | safeHTML}}
@@ -14,8 +14,8 @@
         </div>
 
         <div class="row">
-            {{"<!-- tools item -->" | safeHTML}}
-            {{ range .Site.Data.tools.toolsItem }}
+            {{"<!-- customer item -->" | safeHTML}}
+            {{ range .Site.Data.customer.customerItem }}
             <div class="col-xs-12 col-sm-6 col-md-4 narrowgap">
                 <a href="{{ .URL | absURL }}" target="_blank">
                     <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
@@ -26,5 +26,5 @@
 
     </div>
 </section>
-{{"<!-- /Tools -->" | safeHTML}}
+{{"<!-- /Customer -->" | safeHTML}}
 {{ end }}
