@@ -467,6 +467,13 @@ aside.widget {
     font-size: 22px;
 }
 
+#footer span.footer-center {
+    position: absolute;
+    width: 100%;
+    left:0;
+    text-align: center;
+    margin: 0 auto;
+}
 /*=================================================================
   Ionicons Icon Font (copied from themefisher css to match Theme)
 ==================================================================*/
