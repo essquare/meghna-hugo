@@ -9,9 +9,6 @@
         </div>
         {{"<!-- /section title -->" | safeHTML}}        
         <div class="row flex-row">
-
-
-
             {{ range .Site.Data.team.teamMember}}
             {{"<!-- team member -->" | safeHTML}}
             <div class="col-md-4 col-sm-6 col-xs-12">
@@ -24,7 +21,7 @@
                         <div class="mask">
                             <ul class="list-inline">
                                 {{ range .socialIcon }}
-                                <li><a href="#"><i class="{{ .icon }}"></i></a></li>
+                                <li><a href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
                                 {{ end }}
                             </ul>
                         </div>
