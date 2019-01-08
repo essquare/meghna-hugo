@@ -3,7 +3,7 @@
 <section class="services section" id="services">
     <div class="container">
         {{"<!-- section title -->" | safeHTML }}
-        <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+        <div class="title text-center">
             <h2>{{ with .Site.Data.services.heading }} {{ . }} {{ end }}<span class="color">{{ with .Site.Data.services.headingSpan }} {{ . }} {{ end }}</span></h2>
             <div class="border"></div>
         </div>
@@ -11,7 +11,7 @@
         <div class="row flex-row">
             {{ range .Site.Data.services.servicesItem}}
             {{"<!-- Single Service Item -->" | safeHTML }}
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+            <article class="col-md-4 col-sm-6 col-xs-12">
                 <div class="service-block text-center flex-text">
                     <div class="service-icon text-center">
                         <i class="{{ .icon }}"></i>

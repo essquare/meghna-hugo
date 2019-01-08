@@ -3,7 +3,7 @@
 <section class="about section" id="about">
     <div class="container">
         {{"<!-- section title -->" | safeHTML}}
-        <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+        <div class="title text-center">
             <h2>{{ .Site.Data.about.heading}} <span class="color">{{ .Site.Data.about.headingSpan}}</span> </h2>
             <div class="border"></div>
         </div>
@@ -11,7 +11,7 @@
         <div class="row flex-row">
             {{ range .Site.Data.about.aboutItem }}
             {{"<!-- About item -->" | safeHTML}}
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+            <div class="col-md-4 text-center">
                 <div class="block flex-text">
                     <div class="icon-box">
                             {{with .icon}}<i class="{{ . }}"></i>{{ end }}

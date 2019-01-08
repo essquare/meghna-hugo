@@ -3,7 +3,7 @@
 <section class="section" id="team">
     <div class="container">
         {{"<!-- section title -->" | safeHTML}}
-        <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+        <div class="title text-center">
             <h2>{{ with .Site.Data.team.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.team.headingSpan }} {{ . }} {{ end }}</span></h2>
             <div class="border"></div>
         </div>
@@ -14,7 +14,7 @@
 
             {{ range .Site.Data.team.teamMember}}
             {{"<!-- team member -->" | safeHTML}}
-            <div class="col-md-4 col-sm-6 col-xs-12  wow fadeInDown" data-wow-duration="500ms">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="team-member">
                     <div class="member-photo">
                         {{"<!-- member photo -->" | safeHTML}}
