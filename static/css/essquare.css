@@ -313,6 +313,10 @@ aside.widget {
     width: 4em;
 }
 
+#footer {
+    padding-bottom: 20px;
+}
+
 /*=================================================================
   Services section
 ==================================================================*/
@@ -467,13 +471,17 @@ aside.widget {
     font-size: 22px;
 }
 
-#footer span.footer-center {
+#footer div.footer-center {
     position: absolute;
-    width: 100%;
-    left:0;
-    text-align: center;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%)
 }
+#footer div.pull-right {
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%)
+}
+
 /*=================================================================
   Ionicons Icon Font (copied from themefisher css to match Theme)
 ==================================================================*/
