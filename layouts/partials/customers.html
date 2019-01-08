@@ -17,9 +17,13 @@
             {{"<!-- customer item -->" | safeHTML}}
             {{ range .Site.Data.customers.customersItem }}
             <div class="col-xs-12 col-sm-6 col-md-4 narrowgap">
-                <a href="{{ .URL | absURL }}" target="_blank">
+                {{ if .link }}
+                <a href="#{{ .link }}">
+                {{ end }}
                     <img class="img-responsive" src="{{ .image | absURL}}" alt="work-image">
+                {{ if .link }}
                 </a>
+                {{ end }}
             </div>
             {{ end }}
         </div>
