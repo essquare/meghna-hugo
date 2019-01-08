@@ -139,7 +139,7 @@ a:hover {
 
 .about .block .icon-box i {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 30px;
     width: 100px;
 }
@@ -248,7 +248,7 @@ aside.widget {
     margin-bottom: 25px;
 }
 
-.widget-title>h3 {
+.widget-title > h3 {
     color: #fff;
     margin-bottom: 15px;
     margin-top: 0;
@@ -260,15 +260,17 @@ aside.widget {
     margin: 0;
 }
 
-@media only screen and (min-width : 481px) {
+@media only screen and (min-width: 481px) {
     .flex-row.row {
         display: flex;
         flex-wrap: wrap;
     }
+
     .flex-row.row > [class*='col-'] {
         display: flex;
         flex-direction: column;
     }
+
     .flex-row.row:after,
     .flex-row.row:before {
         display: flex;
@@ -277,15 +279,17 @@ aside.widget {
 
 .flex-row .thumbnail,
 .flex-row .caption {
-    flex:1 0 auto;
-    flex-direction:column;
+    flex: 1 0 auto;
+    flex-direction: column;
 }
+
 .flex-text {
-    flex-grow:1
+    flex-grow: 1
 }
+
 .flex-row img {
-    height:auto;
-    width:100%
+    height: auto;
+    width: 100%
 }
 
 /*===========
@@ -343,11 +347,12 @@ aside.widget {
 }
 
 .contact-form .form-control,
-.contact-form textarea.form-control  {
+.contact-form textarea.form-control {
     font-weight: 300;
     font-size: 22px;
     color: white;
 }
+
 .contact-form .form-control {
     background-color: transparent;
     border: 1px solid rgba(236, 239, 241, 0.07);
@@ -382,7 +387,7 @@ aside.widget {
 .contact-info h6,
 .contact-info p {
     color: white;
-} 
+}
 
 .contact-info p {
     font-weight: 300;
@@ -393,7 +398,7 @@ aside.widget {
     margin-bottom: 0;
 }
 
-.con-info i{
+.con-info i {
     float: left;
 }
 
@@ -405,6 +410,7 @@ aside.widget {
 #contact div.contact-info div.row {
     margin-bottom: 15px;
 }
+
 .social-icon ul li:hover a {
     background-color: var(--essquare-beige);
     -ms-transform: scale(1, 1);
@@ -460,6 +466,7 @@ aside.widget {
     font-weight: 300;
     font-size: 22px;
 }
+
 /*=================================================================
   Ionicons Icon Font (copied from themefisher css to match Theme)
 ==================================================================*/
@@ -475,14 +482,7 @@ aside.widget {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-
-
-
-
-
-
+}
 
 .narrowgap {
     padding: 15px;
